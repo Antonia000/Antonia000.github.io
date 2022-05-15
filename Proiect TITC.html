@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmul Huffman</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500&display=swap');
+        body{
+            font-family: 'Montserrat';
+            text-align: center;
+            margin:0;
+            color:#4d4d4d;
+        }
+        .content{
+            display:flex; 
+            align-items: center; 
+            justify-content: center;
+            margin:0;
+            padding:0;
+        }
+        .title{
+            height:100%;
+            width:60%;
+            background-image: linear-gradient( rgba(255, 255, 255),rgba(255, 255, 255,0.7)),url("bg.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top:25%;
+            padding-bottom:25%;
+            margin:0;
+        }
+
+        .form{
+            margin:auto;
+            padding:0;
+            display:grid;
+            align-items: center; 
+        }
+        .form > *{
+            margin:20px;
+            padding:10px;
+            border-radius: 5px;
+        }
+        #output {
+        white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="title">
+            <h1>Algoritmul Huffman</h1>
+        </div>
+        <div class="form">
+            <h2>Introduceti sirul de caractere</h2>
+            <input type="text" id="input" />
+            <button onclick="codare_Huffman()">Codare Huffman</button> 
+            <div id="output">Aici apare output-ul</div>
+         </div>
+   
+    </div>
+    
+</body>
+<script src="Huffman-coding.js"></script>
+</html>
